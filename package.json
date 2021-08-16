@@ -1,7 +1,7 @@
 {
     "name":"bootstrap-reagent-project",
     "license" : "GPL-2.0-only",
-    "script": {
+    "scripts": {
         "bootstrap-reagent-project": "./bootstrap.sh"
     }
 }
