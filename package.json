@@ -1,6 +1,6 @@
 {
     "name":"bootstrap-reagent-project",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license" : "GPL-2.0-only",
     "repository": {
         "type": "git",
@@ -11,7 +11,7 @@
         "url": "https://github.com/Jemoka/bootstrap-reagent-project/issues"
     },
     "scripts": {
-        "bootstrap-reagent-project": "./bootstrap.sh"
+        "bootstrap-reagent-project": "bash ./bootstrap.sh"
     }
 }
 
