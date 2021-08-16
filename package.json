@@ -13,4 +13,5 @@
     "scripts": {
         "bootstrap-reagent-project": "./bootstrap.sh"
     }
+}
 
