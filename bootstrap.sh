@@ -49,6 +49,11 @@ pushd $NAME > /dev/null
     printf "Generating tailwind CSS file... "
     npx tailwindcss -o ./public/css/tailwind.css &> /dev/null
     print_done
+    printf "Initializing git repo... "
+    git init --quiet 
+    git add --all 1>/dev/null 2>/dev/null
+    git commit -m "Initial Commit" --quiet 
+    print_done
 popd > /dev/null
 printf "\n"
 
