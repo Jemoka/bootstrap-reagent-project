@@ -10,8 +10,9 @@
     "bugs": {
         "url": "https://github.com/Jemoka/bootstrap-reagent-project/issues"
     },
+    "bin":"./bootstrap.sh",
     "scripts": {
-        "bootstrap-reagent-project": "bash ./bootstrap.sh"
+        "bootstrap-reagent-project": "./bootstrap.sh"
     }
 }
 
