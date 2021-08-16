@@ -15,7 +15,7 @@ printf "\nHewoooooo. This is ${CYAN}boostrap-reagent-project${RESET}.\nGet ready
 printf "App Name: ${BOLD}${BLUE}"
 read NAME
 
-NAME=$(echo $NAME | sed "s/[^[:alnum:]-]//g" | sed -e 's/\(.*\)/\L\1/')
+NAME=$(echo $NAME | sed "s/[^[:alnum:]]//g" | sed -e 's/\(.*\)/\L\1/')
 
 printf "${RESET}\nGreat choice! Working on making it happen...\n\n"
 
