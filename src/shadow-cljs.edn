@@ -1,0 +1,15 @@
+{:source-paths ["src"]
+ :dependencies [[binaryage/devtools "1.0.3"]
+                [reagent "1.1.0"]
+                [nrepl "0.8.3"]
+                [clj-commons/secretary "1.2.4"]
+                [venantius/accountant "0.2.5"]
+                [cider/cider-nrepl "0.24.0"]]
+ :builds       {:app {:target     :browser
+                      :output-dir "public/js"
+                      :asset-path "/js"
+                      :modules    {:app {:entries [__app_name.core]}}
+                      :devtools   {:after-load __app_name.core/mount-root}}}
+
+ :dev-http     {3000 {:root    "public"
+                      :handler user/app}}}

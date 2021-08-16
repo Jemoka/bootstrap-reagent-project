@@ -1,0 +1,16 @@
+{
+    "name":"__app_name",
+    "license" : "(EPL-2.0 OR GPL-2.0-only)",
+    "devDependencies": {
+        "shadow-cljs": "^2.14.3",
+        "tailwindcss": "^2.2.7"
+    },
+    "dependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    },
+    "scripts": {
+        "dev": "shadow-cljs watch app",
+        "dist": "shadow-cljs release app"
+    }
+}
