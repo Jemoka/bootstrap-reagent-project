@@ -1,5 +1,4 @@
 body {
-  font-family: 'Helvetica Neue', Verdana, Helvetica, Arial, sans-serif !important;
   -webkit-font-smoothing: antialiased;
   font-size: 1.125em;
   color: #333;
@@ -10,4 +9,15 @@ h1 {
     font-size: 30px;
     font-weight: 700;
 }
+
+.reveal,
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-family: 'Helvetica Neue', Verdana, Helvetica, Arial, sans-serif;
+}
+
 
