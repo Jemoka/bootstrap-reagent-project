@@ -15,7 +15,7 @@ printf "\nHewoooooo. This is ${CYAN}boostrap-reagent-project${RESET}.\nGet ready
 printf "App Name: ${BOLD}${BLUE}"
 read NAME
 
-NAME=$(echo $NAME | sed "s/[^[:alnum:]]//g" | sed -e 's/\(.*\)/\1/')
+NAME=$(echo $NAME | LC_CTYPE=C sed "s/[^[:alnum:]]//g" | LC_CTYPE=C sed -e 's/\(.*\)/\1/')
 
 printf "${RESET}\nGreat choice! Working on making it happen...\n\n"
 
@@ -45,7 +45,7 @@ pushd $NAME > /dev/null
     print_done
     printf "Setting project name... "
     for FILE in $(find . -type f); do
-        echo "$(cat $FILE | sed -e "s/__app_name/$NAME/g")" > $FILE
+        echo "$(cat $FILE | LC_CTYPE=C sed -e "s/__app_name/$NAME/g")" > $FILE
     done
     print_done
     printf "Fetching dependencies... "
