@@ -29,7 +29,7 @@ pushd $(mktemp -d ) > /dev/null
     git clone --quiet --recursive "https://github.com/Jemoka/bootstrap-reagent-project" rp
     print_done
     printf "Creating target directory... "
-    if ["$1" = "-preso"]; then
+    if [[ "$1" = "-preso" ]]; then
         mv ./rp/src/reveal/* $WORKDIR/$NAME/
         mv ./rp/src/reveal/.gitignore $WORKDIR/$NAME/
     else
