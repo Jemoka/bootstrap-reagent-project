@@ -1,5 +1,5 @@
 # __app_name
-TODO: fill in what your awesome app is about!
+TODO: what's this presentation about?
 
 ## Getting Started on Development 
 This will start a browser ClojureScript REPL and a shadow-cljs server.

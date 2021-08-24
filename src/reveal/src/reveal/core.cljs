@@ -1,11 +1,12 @@
-(ns reveal.core
+(ns __app_name.core
     (:require
       ;; Reagent libraries
       [reagent.core :as r]
       [reagent.dom :as d]
 
       ;; The Preso
-      [reveal.presentation :as p]))
+      [__app_name.presentation :as p]))
+
 (set! *warn-on-infer* false)
 
 ;; -------------------------

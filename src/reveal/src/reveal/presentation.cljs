@@ -1,4 +1,4 @@
-(ns reveal.presentation)
+(ns __app_name.presentation)
 
 (def presentation
   [[:section "One"]
