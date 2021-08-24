@@ -15,7 +15,7 @@ printf "\nHewoooooo. This is ${CYAN}boostrap-reagent-project${RESET}.\nGet ready
 printf "App Name: ${BOLD}${BLUE}"
 read NAME
 
-NAME=$(echo $NAME | sed "s/[^[:alnum:]]//g" | sed -e 's/\(.*\)/\L\1/')
+NAME=$(echo $NAME | sed "s/[^[:alnum:]]//g" | sed -e 's/\(.*\)/\1/')
 
 printf "${RESET}\nGreat choice! Working on making it happen...\n\n"
 
@@ -29,7 +29,7 @@ pushd $(mktemp -d ) > /dev/null
     git clone --quiet --recursive "https://github.com/Jemoka/bootstrap-reagent-project" rp
     print_done
     printf "Creating target directory... "
-    if [$1 = "-preso"]; then
+    if ["$1" = "-preso"]; then
         mv ./rp/src/reveal/* $WORKDIR/$NAME/
         mv ./rp/src/reveal/.gitignore $WORKDIR/$NAME/
     else
