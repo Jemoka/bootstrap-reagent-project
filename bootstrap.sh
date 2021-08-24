@@ -44,7 +44,7 @@ pushd $NAME > /dev/null
     mv ./src/__app_name ./src/$NAME/
     print_done
     printf "Setting project name... "
-    for FILE in $(find . -type f); do
+    for FILE in $(find .  -type f -path ./public/reveal -prune -false); do
         echo "$(cat $FILE | sed -e "s/__app_name/$NAME/g")" > $FILE
     done
     print_done
