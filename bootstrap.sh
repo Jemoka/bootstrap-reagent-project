@@ -26,11 +26,16 @@ print_done
 WORKDIR=$PWD
 pushd $(mktemp -d ) > /dev/null
     printf "Cloning bootstrap repo... "
-    git clone --quiet "https://github.com/Jemoka/bootstrap-reagent-project" rp
+    git clone --quiet --recursive "https://github.com/Jemoka/bootstrap-reagent-project" rp
     print_done
     printf "Creating target directory... "
-    mv ./rp/src/* $WORKDIR/$NAME/
-    mv ./rp/src/.gitignore $WORKDIR/$NAME/
+    if [$1 = "-preso"]; then
+        mv ./rp/src/reveal/* $WORKDIR/$NAME/
+        mv ./rp/src/reveal/.gitignore $WORKDIR/$NAME/
+    else
+        mv ./rp/src/core/* $WORKDIR/$NAME/
+        mv ./rp/src/core/.gitignore $WORKDIR/$NAME/
+    fi
     print_done
 popd > /dev/null
 

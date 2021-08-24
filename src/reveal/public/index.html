@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <link rel="stylesheet" href="/reveal/dist/reset.css"  type="text/css">
+        <link rel="stylesheet" href="/reveal/dist/reveal.css"  type="text/css">
+        <link rel="stylesheet" href="/reveal/dist/theme/white.css"  type="text/css">
+        <link href="/css/tailwind.css" rel="stylesheet" type="text/css">
+        <link href="/css/site.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="reveal">
+        </div>
+        <script src="/js/app.js" type="text/javascript"></script>
+        <script type="text/javascript">reveal.core.init_BANG_();</script>
+        <script src="/reveal/dist/reveal.js"></script>
+        <script src="/reveal/plugin/notes/notes.js"></script>
+        <script src="/reveal/plugin/markdown/markdown.js"></script>
+        <script src="/reveal/plugin/highlight/highlight.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                            // No transition
+                            backgroundTransition: 'none',
+                            transition: 'none',
+                            // Hide controls
+                            controls: false,
+                            // Hide progressbar
+                            progress: false,
+                            // Do center
+                            center: true,
+                            // Do automagically layout
+                            disableLayout: false,
+                            // Learn about plugins: https://revealjs.com/plugins/
+                            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+                        });
+        </script>
+    </body>
+</html>
