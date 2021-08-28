@@ -19,7 +19,8 @@
 ;; Configure Reveal
 
 (def reveal-params #js 
-  {:width 1280 ; Size
+  {:hash true ; Use hashes
+   :width 1280 ; Size
    :height 720
    :backgroundTransition "none" ; No transition
    :transition "none"
